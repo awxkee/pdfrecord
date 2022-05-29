@@ -19,7 +19,8 @@ let package = Package(
         .target(
             name: "pdfrecord",
             dependencies: [.product(name: "pdfwriter", package: "pdfwriter")],
-            publicHeadersPath: "include"),
+            publicHeadersPath: "include",
+            linkerSettings: [.linkedLibrary("z")]),
         .testTarget(
             name: "xpdfTests",
             dependencies: ["pdfrecord"]),
