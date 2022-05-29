@@ -1,5 +1,5 @@
 import XCTest
-@testable import xpdf
+@testable import pdfrecord
 
 final class xpdfTests: XCTestCase {
     func testExample() throws {

@@ -1,4 +1,4 @@
-module xpdf {
+module pdfrecord {
     header "PDFRecord.hpp"
     link "z"
     export *

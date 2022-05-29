@@ -4,12 +4,12 @@
 import PackageDescription
 
 let package = Package(
-    name: "xpdf",
+    name: "pdfrecord",
     platforms: [.iOS(.v12), .macOS(.v12), .macCatalyst(.v14)],
     products: [
         .library(
-            name: "xpdf",
-            targets: ["xpdf"]),
+            name: "pdfrecord",
+            targets: ["pdfrecord"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -17,11 +17,11 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "xpdf",
+            name: "pdfrecord",
             dependencies: [.product(name: "pdfwriter", package: "pdfwriter")],
             publicHeadersPath: "include"),
         .testTarget(
             name: "xpdfTests",
-            dependencies: ["xpdf"]),
+            dependencies: ["pdfrecord"]),
     ]
 )
