@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "libpng.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/awxkee/libpng.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ac116d07b7f040be1441b016be6f70907b0010c2"
+      }
+    },
+    {
+      "identity" : "mozjpeg.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/awxkee/mozjpeg.swift.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "4a7bed68d938b0299b82ad6b769a5aaf14ce595d"
+      }
+    },
+    {
+      "identity" : "pdfwriter",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/awxkee/pdfwriter.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "5efe6a87158ea617226caeb8c5c429b7aa4d4c94"
+      }
+    }
+  ],
+  "version" : 2
+}
