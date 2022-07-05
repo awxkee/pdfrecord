@@ -256,25 +256,13 @@ NSString * const InvalidPageError = @"Invalid page was provided";
 }
 
 +(ULongAndULongList)makeFinishedVector:(std::vector<int>)startVector {
-    int startOfRange = -1;
     ULongAndULongList ranges = ULongAndULongList();
     if (startVector.size() == 0) {
         return ranges;
     }
     for (int i = 0; i < startVector.size(); i++) {
-        if (startOfRange == - 1) {
-            startOfRange = startVector[i];
-            continue;
-        }
-        if (i >= 1 && startVector[i] != startVector[i - 1] + 1) {
-            ranges.push_back(ULongAndULong(startOfRange, startVector[i - 1]));
-            startOfRange = startVector[i];
-        }
+        ranges.push_back(ULongAndULong(startVector[i], startVector[i]));
     }
-    if (startOfRange == -1) {
-        startOfRange = startVector[startVector.size() - 1];
-    }
-    ranges.push_back(ULongAndULong(startOfRange, startVector.size() - 1));
     return ranges;
 }
 
