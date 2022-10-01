@@ -211,7 +211,7 @@ NSString * const InvalidPageError = @"Invalid page was provided";
     
     NSString *version = bundleInfoDictionary[@"CFBundleShortVersionString"];
     NSString *build = bundleInfoDictionary[(NSString*)kCFBundleVersionKey];
-    auto creationTool = [NSString stringWithFormat:@"xPDF by Radzivon Bartoshyk: %@.%@", version, build];
+    auto creationTool = [NSString stringWithFormat:@"xPDF Version: %@.%@", version, build];
     infoDictionary.Creator = PDFTextString(nsStringToStdC(creationTool));
     infoDictionary.Producer = PDFTextString(nsStringToStdC(creationTool));
     auto now = PDFDate();
