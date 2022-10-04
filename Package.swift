@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
-        .package(url: "https://github.com/awxkee/pdfwriter.git", branch: "master")
+        .package(url: "https://github.com/awxkee/pdfwriter.git", "1.0.0"..<"2.0.0")
     ],
     targets: [
         .target(

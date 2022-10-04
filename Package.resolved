@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awxkee/libpng.swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "18933d568f7d60c7a5db6dbbd0f0694d8ad8c19d"
+        "revision" : "18933d568f7d60c7a5db6dbbd0f0694d8ad8c19d",
+        "version" : "1.0.0"
       }
     },
     {
@@ -14,8 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awxkee/mozjpeg.swift.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "83bb67d47c4aa48ec9f94f8541e47fc3e6262772"
+        "revision" : "83bb67d47c4aa48ec9f94f8541e47fc3e6262772",
+        "version" : "1.0.0"
       }
     },
     {
@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awxkee/pdfwriter.git",
       "state" : {
-        "branch" : "master",
-        "revision" : "15cfd2be6d653c283e257eccb82a03b0f435a442"
+        "revision" : "245aafee287a444bd0a016144471f647fdcb622d",
+        "version" : "1.0.0"
       }
     }
   ],
