@@ -9,7 +9,8 @@
 
 BufferReadStream::BufferReadStream(char* buffer, size_t size) {
     this->pointer = 0;
-    this->buffer = std::vector<char>(buffer, buffer + size);
+    this->buffer = std::vector<char>(size);
+    std::copy(buffer, buffer + size, this->buffer.begin());
 }
 
 BufferReadStream::~BufferReadStream() {
@@ -17,7 +18,7 @@ BufferReadStream::~BufferReadStream() {
     this->pointer = 0;
 }
 
-IOBasicTypes::LongBufferSizeType BufferReadStream::Read(IOBasicTypes::Byte* inBuffer,IOBasicTypes::LongBufferSizeType inBufferSize) {
+IOBasicTypes::LongBufferSizeType BufferReadStream::Read(IOBasicTypes::Byte* inBuffer, IOBasicTypes::LongBufferSizeType inBufferSize) {
     auto bufEnd = std::min(this->buffer.begin() + this->pointer + inBufferSize, this->buffer.end());
     auto bufStart = this->buffer.begin() + this->pointer;
     std::copy(bufStart, bufEnd, inBuffer);
