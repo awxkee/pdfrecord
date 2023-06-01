@@ -23,8 +23,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/awxkee/pdfwriter.git",
       "state" : {
-        "revision" : "a07cb2635dabfabd20a20d5c622dbab051ada843",
-        "version" : "1.0.1"
+        "revision" : "43a3cf781979f8adac578a2c45eff428eee23269",
+        "version" : "1.0.2"
       }
     }
   ],

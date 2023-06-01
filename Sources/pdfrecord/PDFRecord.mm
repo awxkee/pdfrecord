@@ -491,6 +491,10 @@ NSString * const InvalidPageError = @"Invalid page was provided";
         PDFPageInput pageInput(&parser, parser.ParsePage(i));
         auto mediaBox = pageInput.GetMediaBox();
         AbstractContentContext* contentContext = modifiedPage.StartContentContext();
+        if (!contentContext) {
+            *error = [[NSError alloc] initWithDomain:@"PDFRecord" code:500 userInfo:@{ NSLocalizedDescriptionKey: @"Page context allocation was failed. Return fail from enumeration" }];
+            return nil;
+        }
         AbstractContentContext::TextOptions opt(font, 10, AbstractContentContext::eGray, 0);
         auto textX = (mediaBox.UpperRightX - textDimensions.width) / 2;
         auto textY = 8.0;
